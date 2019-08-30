@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubProfileComponent } from './github-profile/github-profile.component';
+import { GithubRepoComponent } from './github-repo/github-repo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GithubProfileComponent
+    GithubProfileComponent,
+    GithubRepoComponent
   ],
   imports: [
     BrowserModule,
