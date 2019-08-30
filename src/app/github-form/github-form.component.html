@@ -1,0 +1,18 @@
+<!-- <p>github-form works!</p> -->
+
+
+<form (ngSubmit)='submitUser()' #githubForm='ngForm'>
+
+    <!--Name Input -->
+        <div class="form-group">
+          <label appBolder for="name">Search A GitHub Profile:</label>
+          <input id="name" class="form-control" type="text" required [(ngModel)]="username" name="name" #name="ngModel">
+          <button type="submit" class="btn-primary"> < 🔍 > SEARCH </button>
+        </div>
+        <div class="alert-danger" [hidden]="name.valid || name.pristine">
+          <p>Name is required</p>
+        </div>
+  
+  
+  </form>
+  

@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 //   }
 
 // }
-import { UserRequestService } from '../user-http/user-request.service';
+import { UserService } from '../user-request/userservice';
 import { User } from '../user';
 // import { Repo } fro m '../repo-class/repo';
 import   { Repo }  from '../repo';
@@ -21,24 +21,24 @@ import   { Repo }  from '../repo';
 @Component({
   selector: 'app-github-profile',
   templateUrl: './github-profile.component.html',
-  providers: [UserRequestService],
+  providers: [UserService],
   styleUrls: ['./github-profile.component.css']
 })
 export class GithubProfileComponent implements OnInit {
 
-  person:User;
+  user:User;
   arrayRepo:Repo[];
   // username:any;
 
-  constructor(private userService: UserRequestService) { }
+  constructor(private userService: UserService) { }
 
   getResponse(username) {
     this.userService.userRequest(username);
-    this. person = this.userService.user;
-    this. person.showRepos = false;
+    this. user = this.userService.user;
+    this. user.showRepos = false;
 
     console.log("Got User Response");
-    console.log(this. person);
+    console.log(this. user);
 
     this.userService.repoRequest(username);
     this.arrayRepo = this.userService.arrayRepo;
@@ -61,7 +61,7 @@ export class GithubProfileComponent implements OnInit {
 
 
   toggleRepos(){
-    this.users.showRepos = !this.users.showRepos;
+    this.user.showRepos = !this.user.showRepos;
     console.log("Toggle Repos");
   }
 
