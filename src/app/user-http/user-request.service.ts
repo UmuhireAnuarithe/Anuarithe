@@ -1,14 +1,12 @@
 import { Injectable } from '@angular/core';
-import{ User} from '../user';
-// import{ UserService } from '../userservice';
-import { Repo} from '../repo';
+import {  Repo}  from  '../repo';
+import {  User}  from '../user';
 import { HttpClient } from '@angular/common/http';
-import { constructor } from 'console';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class UserRequestService {
 
 
   user: User;
@@ -59,13 +57,11 @@ export class UserService {
         this.arrayRepo.push(this.repo);
       }
       return this.arrayRepo;
-    });
+    })
 
 
   } //end repoRequest
 
 }
-
-  constructor() ;
-  { }
-
+//   constructor() { }
+// }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserRequestService } from '../user-http/user-request.service';
 
 // @Component({
 //   selector: 'app-github-profile',
@@ -13,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 //   }
 
 // }
-import { UserService } from '../user-request/userservice';
+
 import { User } from '../user';
 // import { Repo } fro m '../repo-class/repo';
 import   { Repo }  from '../repo';
@@ -21,7 +22,7 @@ import   { Repo }  from '../repo';
 @Component({
   selector: 'app-github-profile',
   templateUrl: './github-profile.component.html',
-  providers: [UserService],
+  providers: [UserRequestService],
   styleUrls: ['./github-profile.component.css']
 })
 export class GithubProfileComponent implements OnInit {
@@ -30,7 +31,7 @@ export class GithubProfileComponent implements OnInit {
   arrayRepo:Repo[];
   // username:any;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserRequestService) { }
 
   getResponse(username) {
     this.userService.userRequest(username);

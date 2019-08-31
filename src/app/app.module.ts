@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// import { UserService } from '../user-request/userservice';
+
+
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -14,7 +17,8 @@ import { GithubFormComponent } from './github-form/github-form.component';
     AppComponent,
     GithubProfileComponent,
     GithubRepoComponent,
-    GithubFormComponent
+    GithubFormComponent,
+    // UserService
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import  {  Repo }  from  '../repo';
+import { UserRequestService } from '../user-http/user-request.service';
 
 @Component({
   selector: 'app-github-repo',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubRepoComponent implements OnInit {
 
-  constructor() { }
+  // constructor() { }
+  @Input() repo:Repo;
+
+  // constructor(privare userService: UUserRequestService) { }
+
+  constructor(private userService: UserRequestService) { }
 
   ngOnInit() {
   }
