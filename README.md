@@ -1,7 +1,7 @@
-# Anuarithe
-
+# GITHUB SEARCH
+##  project description
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
-
+Its purpose is  to help githubb users   find   annd access their github account  without loging in  through github website .This accounnt should be accessed without password of user ,so  this a helpful  apps   for github  users  .
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
