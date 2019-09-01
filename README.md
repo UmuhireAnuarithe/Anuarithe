@@ -30,4 +30,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ### license and copyright
-<p>&copy</>>Github search 2019
+<p>&copy</>Github search 2019
