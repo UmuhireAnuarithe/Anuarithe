@@ -1,4 +1,5 @@
-# GITHUB SEARCH
+## project name
+GITHUB SEARCH
 ## Author
 Umuhire Anuarithe
 ##  project description
