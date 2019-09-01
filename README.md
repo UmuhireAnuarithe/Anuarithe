@@ -1,4 +1,6 @@
 # GITHUB SEARCH
+## Author
+Umuhire Anuarithe
 ##  project description
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 Its purpose is  to help githubb users   find   annd access their github account  without loging in  through github website .This accounnt should be accessed without password of user ,so  this a helpful  apps   for github  users  .
